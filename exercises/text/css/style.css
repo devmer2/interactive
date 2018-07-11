@@ -194,7 +194,7 @@ body {
 @media screen and (max-width: 850px) {
 
   body {
-    background-color: green;
+    background-color: orange;
     transform: rotateY(160deg);
   }
 
@@ -241,7 +241,7 @@ body {
 @media screen and (max-width: 750px) {
 
   body {
-    background-color: blue;
+    background-color: red;
     transform: rotateY(200deg);
   }
 
@@ -286,7 +286,7 @@ body {
 @media screen and (max-width: 650px) {
 
   body {
-    background-color: purple;
+    background-color: orange;
     transform: rotateY(240deg);
   }
 
@@ -332,7 +332,7 @@ body {
 @media screen and (max-width: 550px) {
 
   body {
-    background-color: magenta;
+    background-color: yellow;
     transform: rotateY(280deg);
   }
 
@@ -378,7 +378,7 @@ body {
 @media screen and (max-width: 400px) {
 
   body {
-    background-color: brown;
+    background-color: orange;
     transform: rotateY(320deg);
   }
 
