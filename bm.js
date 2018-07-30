@@ -33,7 +33,7 @@ function initBookmarklet($) {
           $('head').append('<link rel="stylesheet" href="https://devmer2.github.io/interactive/bm.css" type="text/css" />');
 
           // adds span around chars in p tag
-          $('p').each(function() {
+          $('h1,h2,h3').each(function() {
 
             var string = $(this).html();
             var newString = "";
