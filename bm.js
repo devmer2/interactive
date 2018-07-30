@@ -30,7 +30,7 @@ else {
 function initBookmarklet($) {
         (window.bookmarklet = function() {
 
-          $('head').append('<link rel="stylesheet" href="https://github.com/devmer2/interactive/blob/master/bm.css" type="text/css" />');
+          $('head').append('<link rel="stylesheet" href="https://devmer2.github.io/interactive/bm.css" type="text/css" />');
 
           // adds span around chars in p tag
           $('p').each(function() {
