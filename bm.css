@@ -1,0 +1,9 @@
+.char {
+  filter: blur(3px);
+  transition: 15s ease-out;
+}
+
+.char:hover {
+  filter: none;
+  transition: 0.2s ease-out;
+}
