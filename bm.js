@@ -31,7 +31,7 @@ function initBookmarklet($) {
         (window.bookmarklet = function() {
 
           $('head').append('<link rel="stylesheet" href="https://devmer2.github.io/interactive/bm.css" type="text/css" />');
-          $('h1,h2,h3').addClass('toBlur');
+          $('h1,h2,h3,h4,h5,b,a').addClass('toBlur');
           var textNode, str, newStr;
 
           $('.toBlur')
