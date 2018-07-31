@@ -1,0 +1,9 @@
+img {
+  filter: blur(3px);
+  transition: 8s ease-out;
+}
+
+img:hover {
+  filter: blur(0px);
+  transition: 0.5s ease-out;
+}

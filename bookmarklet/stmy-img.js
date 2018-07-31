@@ -30,32 +30,8 @@ else {
 function initBookmarklet($) {
         (window.bookmarklet = function() {
 
-          $('head').append('<link rel="stylesheet" href="https://devmer2.github.io/interactive/bm.css" type="text/css" />');
-          $('h1,h2,h3,h4,h5,a').addClass('toBlur');
-          var textNode, str, newStr;
+          $('head').append('<link rel="stylesheet" href="https://devmer2.github.io/interactive/bookmarklet/stmy-img.css" type="text/css" />');
 
-          $('.toBlur')
-          .find('*')
-          .addBack('.toBlur')
-          .contents()
-          .filter(function () {
-            return this.nodeType === 3 && typeof this.data != 'undefined' && this.data.replace(/\s+/, "");
-          })
-          .wrap('<span class="char"></span>');
-
-          $('.toBlur')
-          .find('.char')
-          .each(function () {
-            textNode = $(this);
-            str = textNode.text().split('');
-            newStr = '';
-
-            $.each(str, function (index, value) {
-              newStr += '<span class="char">' + value + '</span>';
-            });
-
-            textNode.replaceWith($(newStr));
-          });
         })();
 }
 })();
