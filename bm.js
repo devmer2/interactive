@@ -31,18 +31,30 @@ function initBookmarklet($) {
         (window.bookmarklet = function() {
 
           $('head').append('<link rel="stylesheet" href="https://devmer2.github.io/interactive/bm.css" type="text/css" />');
+          $('h1,h2,h3').addClass('toBlur');
+          var textNode, str, newStr;
 
-          // adds span around chars in p tag
-          $('h1,h2,h3').each(function() {
+          $('.toBlur')
+          .find('*')
+          .addBack('.toBlur')
+          .contents()
+          .filter(function () {
+            return this.nodeType === 3 && typeof this.data != 'undefined' && this.data.replace(/\s+/, "");
+          })
+          .wrap('<span class="char"></span>');
 
-            var string = $(this).html();
-            var newString = "";
+          $('.toBlur')
+          .find('.char')
+          .each(function () {
+            textNode = $(this);
+            str = textNode.text().split('');
+            newStr = '';
 
-            for (var i = 0; i < string.length; i++) {
-              newString += '<span class="char">' + string[i] + '</span>';
-            }
+            $.each(str, function (index, value) {
+              newStr += '<span class="char">' + value + '</span>';
+            });
 
-            $(this).html(newString); // replaces with newString
+            textNode.replaceWith($(newStr));
           });
         })();
 }
