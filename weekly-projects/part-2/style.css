@@ -1,33 +1,24 @@
-
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 h1 {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
 h2 {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: normal;
-  font-size: 14px;
-  text-transform: uppercase;
-  line-height: 0;
-  margin-top: 40px;
-}
-
-p {
-  filter: blur(4px);
-  transition: 0.5s;
-}
-
-p:hover {
-  filter: none;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  padding-bottom: 13px;
 }
 
 a:link {
@@ -50,43 +41,47 @@ ul {
   padding: 0;
 }
 
+p {
+  margin: 0;
+}
+
+.char {
+  filter: blur(2.5px);
+  transition: 15s ease-out;
+}
+
+.char:hover {
+  filter: blur(0px);
+  transition: 0.2s ease-out;
+}
+
 .img {
   display: block;
   margin: 0 auto;
-  width: 65vw;
-  padding-top: 2em;
-  filter: blur(0.5em);
-  transition: 0.5s;
-}
-
-.img-r {
-  display: block;
-  margin: 0 auto;
-  transform: translate(30%);
-  width: 40vw;
-  padding-top: 2em;
-  filter: blur(0.5em);
-  transition: 0.5s;
+  width: 56vw;
+  filter: blur(4px);
+  transition: 1s ease-out;
+  margin-bottom: 30px;
 }
 
 .img-l {
   display: block;
   margin: 0 auto;
-  transform: translate(-30%);
-  width: 40vw;
-  padding-top: 2em;
-  filter: blur(0.5em);
-  transition: 0.5s;
+  width: 56vw;
+  filter: blur(4px);
+  transition: 1s ease-out;
+  margin-bottom: 0px;
 }
 
-.img:hover, .img-r:hover, .img-l:hover {
-  filter: none;
+.img:hover, .img-l:hover {
+  filter: blur(0px);
+  transition: 0.5s ease-out;
 }
 
 #description {
   left: 10px;
   top: 10px;
-  width: 20vw;
+  width: 29vw;
 }
 
 #pics {
@@ -95,7 +90,8 @@ ul {
   bottom: 0px;
   right: 0px;
   /*height: 90vh;*/
-  width: 70vw;
+  width: 55vw;
+  padding-left: 10px;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -104,4 +100,5 @@ ul {
   position: fixed;
   background-color: white;
   bottom: 10px;
+  left: 10px;
 }
