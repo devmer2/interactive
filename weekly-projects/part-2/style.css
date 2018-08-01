@@ -27,8 +27,8 @@ a:link {
 }
 
 a:hover {
-  text-decoration: line-through;
-  color: black;
+  text-decoration: none;
+  opacity: 0.5;
 }
 
 a:visited {
