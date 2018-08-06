@@ -3,11 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Simple Instructions</title>
   </head>
   <body>
-    <img src="pic.jpg" width="1000" alt="instructions">
-    <hr>
-    <a href="../../index.html">Back</a>
+    <img id="pic" src="pic.jpg" title="instructions">
+    <h1 id="next" onclick="nextPic()">→</h1>
+    <a id="back" href="../../index.html">Back</a>
+
+    <script type="text/javascript">
+      var i = 0;
+      var pics = ["1.jpg", "2.jpg", "3.jpg", "pic.jpg"];
+      var desc = ["Natalie", "Wolff", "Jamachi", "Instructions"];
+
+      function nextPic() {
+        if (i > 3) i = 0;
+        document.getElementById('pic').src = pics[i];
+        document.getElementById('pic').title = desc[i];
+        i++;
+      }
+    </script>
   </body>
 </html>

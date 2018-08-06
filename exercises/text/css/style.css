@@ -8,7 +8,7 @@ body {
   margin: 0px;
   padding: 10px;
   z-index: 99;
-  background-color: salmon;
+  background-color: black;
   font-size: 25vw;
   transition: 1s ease;
 }
@@ -51,7 +51,8 @@ body {
 @media screen and (max-width: 1250px) {
 
   body {
-    background-color: red;
+    background-color: white;
+    color: black;
     transform: rotateY(40deg);
   }
 
@@ -96,7 +97,8 @@ body {
 @media screen and (max-width: 1150px) {
 
   body {
-    background-color: orange;
+    background-color: black;
+    color: white;
     transform: rotateY(80deg);
   }
 
@@ -144,7 +146,8 @@ body {
 @media screen and (max-width: 950px) {
 
   body {
-    background-color: yellow;
+    background-color: white;
+    color: black;
     transform: rotateY(120deg);
   }
 
@@ -194,7 +197,8 @@ body {
 @media screen and (max-width: 850px) {
 
   body {
-    background-color: orange;
+    background-color: black;
+    color: white;
     transform: rotateY(160deg);
   }
 
@@ -241,7 +245,8 @@ body {
 @media screen and (max-width: 750px) {
 
   body {
-    background-color: red;
+    background-color: white;
+    color: black;
     transform: rotateY(200deg);
   }
 
@@ -286,7 +291,8 @@ body {
 @media screen and (max-width: 650px) {
 
   body {
-    background-color: orange;
+    background-color: black;
+    color: white;
     transform: rotateY(240deg);
   }
 
@@ -332,7 +338,8 @@ body {
 @media screen and (max-width: 550px) {
 
   body {
-    background-color: yellow;
+    background-color: white;
+    color: black;
     transform: rotateY(280deg);
   }
 
@@ -378,7 +385,8 @@ body {
 @media screen and (max-width: 400px) {
 
   body {
-    background-color: orange;
+    background-color: black;
+    color: white;
     transform: rotateY(320deg);
   }
 

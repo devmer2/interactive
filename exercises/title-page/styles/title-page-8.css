@@ -49,14 +49,14 @@ img:hover {
   left: 120px;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 4vw;
   color: black;
   transition: 2s;
 }
 
 #left:hover {
   color:white;
-  font-size: 70px;
+  font-size: 6vw;
 }
 
 #right {
@@ -66,12 +66,12 @@ img:hover {
   right: 34px;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 4vw;
   color: black;
   transition: 2s;
 }
 
 #right:hover {
   color:white;
-  font-size: 30px;
+  font-size: 2vw;
 }

@@ -27,6 +27,7 @@ a:link {
 
 a:hover {
   text-decoration: line-through;
+  text-decoration-style: wavy;
   color: black;
 }
 
@@ -40,32 +41,39 @@ ul {
   padding: 0;
 }
 
-.img {
-  width: 75vw;
-}
-
-.img-small {
-  width: 37vw;
-}
-
 #description {
   left: 10px;
   top: 10px;
   width: 20vw;
 }
 
-#pics {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  height: 90vh;
-  width: 75vw;
-  overflow-x: hidden;
-  overflow-y: scroll;
+#red-ball {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50% 50% 0% 50%;
+  background-color: #ff4e36;
+  z-index: -1;
+  transition: 1s;
+}
+
+#red-ball:hover {
+  width: 300px;
+  height: 300px;
+  cursor: nw-resize;
 }
 
 #webring, #back {
   position: fixed;
   background-color: white;
   bottom: 10px;
+}
+
+@media screen and (max-height: 500px) {
+  #red-ball {
+    width: 30px;
+    height: 30px;
+  }
 }
